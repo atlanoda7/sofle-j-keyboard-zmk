@@ -73,27 +73,27 @@ layers:
   - F4
   - Ctl+F5
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - BACK
-  - FORWARD
+  - $$mdi:mouse-right-click-outline$$
+  - $$mdi:mouse-scroll-wheel$$
   - KP SLASH
   - KP ASTERISK
-  - $$mdi:mouse-scroll-wheel$$
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - '~'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - BACK
   - '&mkp LALT'
   - $$mdi:arrow-up-bold$$
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - $$mdi:mouse-right-click-outline$$
+  - {t: '=', s: +}
   - KP 7
   - KP 8
   - KP 9
   - KP MINUS
   - $$mdi:printer-outline$$
   - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - FORWARD
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
