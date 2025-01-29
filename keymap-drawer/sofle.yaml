@@ -109,7 +109,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+F2
   - Ctl+Alt+$$mdi:arrow-down-bold$$
-  - Ctl+Sft+v
+  - Ctl+Sft+V
   - '{'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '}'
@@ -179,7 +179,7 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '&M_VShtml'
   - '&M_VSlang'
-  - Alt+Sft+f
+  - Alt+Sft+F
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
