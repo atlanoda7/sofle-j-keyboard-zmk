@@ -155,8 +155,8 @@ layers:
   - $$mdi:bluetooth-off$$
   - BT CLR ALL
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+s
-  - Ctl+p
+  - Ctl+S
+  - Ctl+P
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB EFF
   - RGB EFR
@@ -168,8 +168,8 @@ layers:
   - OUT USB
   - OUT BLE
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+Sft+s
-  - Ctl+o
+  - Ctl+Sft+S
+  - Ctl+O
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB BRI
   - RGB BRD
