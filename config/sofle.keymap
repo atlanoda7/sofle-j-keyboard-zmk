@@ -99,8 +99,8 @@
         layer_2 {
             bindings = <
 &kp TILDE  &kp F1          &kp F2           &kp F3           &kp F4        &kp F5        &mmv MOVE_UP     &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3      &bt BT_SEL 4   &trans
-&trans     &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &trans           &trans        &trans        &mmv MOVE_DOWN   &trans           &bt BT_CLR    &bt BT_CLR_ALL  &trans            &kp LC(s)      &kp LC(p)
-&trans     &rgb_ug RGB_EFF &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &trans        &trans        &mmv MOVE_LEFT   &trans           &out OUT_USB  &out OUT_BLE    &trans            &kp LC(LS(s))  &kp LC(o)
+&trans     &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &trans           &trans        &trans        &mmv MOVE_DOWN   &trans           &bt BT_CLR    &bt BT_CLR_ALL  &trans            &kp LC(S)      &kp LC(P)
+&trans     &rgb_ug RGB_EFF &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &trans        &trans        &mmv MOVE_LEFT   &trans           &out OUT_USB  &out OUT_BLE    &trans            &kp LC(LS(S))  &kp LC(O)
 &trans     &rgb_ug RGB_BRI &rgb_ug RGB_BRD  &trans           &trans        &trans        &mmv MOVE_RIGHT  &M_VShtml        &M_VSlang     &kp LA(LS(F))   &trans            &trans         &trans
 &trans     &sys_reset      &soft_off        &bootloader      &trans        &trans        &mkp LCLK        &trans           &sys_reset    &soft_off       &bootloader       &trans
             >;
