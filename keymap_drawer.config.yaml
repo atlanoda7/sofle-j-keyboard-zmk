@@ -399,8 +399,8 @@ parse_config:
     LEFT_SHIFT: $$mdi:chevron-up$$
     LSHFT: $$mdi:chevron-up$$
     LCMD: $$mdi:apple-keyboard-command$$
-    LG: $$mdi:apple-keyboard-command$$
-    LEFT_GUI: $$mdi:apple-keyboard-command$$
+    LG: $$mdi:microsoft$$
+    LEFT_GUI: $$mdi:microsoft$$
     LEFT_COMMAND: $$mdi:apple-keyboard-command$$
     RCTRL: "CTRL"
     RIGHT_CONTROL: "CTRL"
@@ -410,7 +410,7 @@ parse_config:
     RIGHT_SHIFT: $$mdi:chevron-up$$
     RSHFT: $$mdi:chevron-up$$
     RCMD: $$mdi:apple-keyboard-command$$
-    RG: $$mdi:apple-keyboard-command$$
+    RG: $$mdi:microsoft$$
     PSCRN: $$mdi:printer-outline$$
     RIGHT_COMMAND: $$mdi:apple-keyboard-command$$
     PAGE_UP:
