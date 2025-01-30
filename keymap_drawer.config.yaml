@@ -137,13 +137,13 @@ parse_config:
     # Home rows
     "&hm LEFT_GUI A":
       tap: 'A'
-      shifted: $$mdi:apple-keyboard-command$$
+      shifted: "WIN"
     "&hm LEFT_ALT S":
       tap: 'S'
-      shifted: $$mdi:apple-keyboard-option$$
+      shifted: "ALT"
     "&hm LEFT_CONTROL D":
       tap: 'D'
-      shifted: $$mdi:apple-keyboard-control$$
+      shifted: "WIN"
     "&hm LEFT_SHIFT F":
       tap: 'F'
       shifted: $$mdi:chevron-up$$
@@ -152,10 +152,10 @@ parse_config:
       shifted: $$mdi:chevron-up$$
     "&hm RIGHT_CONTROL K":
       tap: 'K'
-      shifted: $$mdi:apple-keyboard-control$$
+      shifted: "WIN"
     "&hm RIGHT_ALT L":
       tap: 'L'
-      shifted: $$mdi:apple-keyboard-option$$
+      shifted: "ALT"
     # self behaviors
     "&hm LG(LS(V)) P":
       tap: 'P'
