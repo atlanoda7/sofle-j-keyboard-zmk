@@ -54,8 +54,8 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:chevron-up$$
   - $$mdi:volume-off$$
-  - '&tob 3'
-  - {t: '2', h: toggle}
+  - {t: '$$mdi:toggle-switch$$', s: '2'}
+  - {t: '$$mdi:toggle-switch$$', s: '1'}
   - LGUI
   - {t: '$$mdi:keyboard-return$$', h: layer1}
   - {t: '$$mdi:keyboard-space$$', h: CTRL}
