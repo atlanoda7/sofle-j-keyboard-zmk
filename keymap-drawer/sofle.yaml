@@ -27,7 +27,7 @@ layers:
   - O
   - P
   - {t: \, s: '|'}
-  - $$mdi:keyboard-capslock$$
+  - $$mdi:keyboard-caps$$
   - A
   - S
   - D
