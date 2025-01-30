@@ -54,8 +54,8 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:chevron-up$$
   - $$mdi:volume-off$$
-  - HOME
-  - PG UP
+  - '&tob 3'
+  - {t: '2', h: toggle}
   - LGUI
   - {t: '$$mdi:keyboard-return$$', h: layer1}
   - {t: '$$mdi:keyboard-space$$', h: CTRL}
@@ -63,7 +63,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: CTRL}
   - {t: '$$mdi:backspace-reverse-outline$$', h: '2'}
   - ALT
-  - PG DN
+  - HOME
   - END
   layer1:
   - {t: '`', s: '~'}
@@ -81,7 +81,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - '~'
   - BACK
-  - {t: '$$mdi:transfer$$', type: trans}
+  - FORWARD
   - $$mdi:arrow-up-bold$$
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -93,7 +93,7 @@ layers:
   - KP MINUS
   - $$mdi:printer-outline$$
   - CTRL
-  - FORWARD
+  - PG UP
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -106,7 +106,7 @@ layers:
   - KP PLUS
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:chevron-up$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PG DN
   - Ctl+F2
   - Ctl+Alt+$$mdi:arrow-down-bold$$
   - Ctl+Sft+V
