@@ -134,6 +134,16 @@ parse_config:
     "&ltq 1 DELETE":
       tap: $$mdi:backspace-reverse-outline$$
       hold: $$mdi:navigation-variant$$
+    "&tog 1":
+      tap: $$mdi:toggle-switch$$
+      shifted: '1'
+    "&tog 2":
+      tap: $$mdi:toggle-switch$$
+      shifted: '2'
+    "&tog 3":
+      tap: $$mdi:toggle-switch$$
+      shifted: '3'
+    
     # Home rows
     "&hm LEFT_GUI A":
       tap: 'A'
@@ -160,6 +170,7 @@ parse_config:
     "&hm LG(LS(V)) P":
       tap: 'P'
       shifted: $$mdi:content-copy$$
+    
     # Mouse
     "&msc SCRL_UP":
       tap: $$mdi:pan-up$$
