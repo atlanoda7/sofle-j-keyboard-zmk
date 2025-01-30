@@ -457,8 +457,8 @@ parse_config:
     DEL: $$mdi:backspace-reverse-outline$$
 
     # Locks
-    CAPSLOCK: $$mdi:keyboard-capslock$$
-    CAPS: $$mdi:keyboard-capslock$$
+    CAPSLOCK: $$mdi:keyboard-caps$$
+    CAPS: $$mdi:keyboard-caps$$
 
     # Sound
     C_MUTE: $$mdi:volume-off$$
