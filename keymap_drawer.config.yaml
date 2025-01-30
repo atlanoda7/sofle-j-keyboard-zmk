@@ -145,10 +145,10 @@ parse_config:
       shifted: $$mdi:apple-keyboard-control$$
     "&hm LEFT_SHIFT F":
       tap: 'F'
-      shifted: $$mdi:apple-keyboard-shift$$
+      shifted: $$mdi:chevron-up$$
     "&hm RIGHT_SHIFT J":
       tap: 'J'
-      shifted: $$mdi:apple-keyboard-shift$$
+      shifted: $$mdi:chevron-up$$
     "&hm RIGHT_CONTROL K":
       tap: 'K'
       shifted: $$mdi:apple-keyboard-control$$
@@ -201,7 +201,7 @@ parse_config:
     # Modifiers
     "&caps_word": $$mdi:alpha-w-box$$
     "&kt RSHIFT":
-      tap: $$mdi:apple-keyboard-shift$$
+      tap: $$mdi:chevron-up$$
       hold: $$mdi:toggle-switch$$
 
     # Empty
@@ -391,24 +391,24 @@ parse_config:
       shifted: ")"
 
     # Modifiers
-    LCTRL: $$mdi:apple-keyboard-control$$
-    LEFT_CONTROL: $$mdi:apple-keyboard-control$$
-    LALT: $$mdi:apple-keyboard-option$$
-    LEFT_ALT: $$mdi:apple-keyboard-option$$
-    LSHIFT: $$mdi:apple-keyboard-shift$$
-    LEFT_SHIFT: $$mdi:apple-keyboard-shift$$
-    LSHFT: $$mdi:apple-keyboard-shift$$
+    LCTRL: "CTRL"
+    LEFT_CONTROL: "CTRL"
+    LALT: "ALT"
+    LEFT_ALT: "ALT"
+    LSHIFT: $$mdi:chevron-up$$
+    LEFT_SHIFT: $$mdi:chevron-up$$
+    LSHFT: $$mdi:chevron-up$$
     LCMD: $$mdi:apple-keyboard-command$$
     LG: $$mdi:apple-keyboard-command$$
     LEFT_GUI: $$mdi:apple-keyboard-command$$
     LEFT_COMMAND: $$mdi:apple-keyboard-command$$
-    RCTRL: $$mdi:apple-keyboard-control$$
-    RIGHT_CONTROL: $$mdi:apple-keyboard-control$$
-    RALT: $$mdi:apple-keyboard-option$$
-    RIGHT_ALT: $$mdi:apple-keyboard-option$$
-    RSHIFT: $$mdi:apple-keyboard-shift$$
-    RIGHT_SHIFT: $$mdi:apple-keyboard-shift$$
-    RSHFT: $$mdi:apple-keyboard-shift$$
+    RCTRL: "CTRL"
+    RIGHT_CONTROL: "CTRL"
+    RALT: "ALT"
+    RIGHT_ALT: "ALT"
+    RSHIFT: $$mdi:chevron-up$$
+    RIGHT_SHIFT: $$mdi:chevron-up$$
+    RSHFT: $$mdi:chevron-up$$
     RCMD: $$mdi:apple-keyboard-command$$
     RG: $$mdi:apple-keyboard-command$$
     PSCRN: $$mdi:printer-outline$$
@@ -457,8 +457,8 @@ parse_config:
     DEL: $$mdi:backspace-reverse-outline$$
 
     # Locks
-    CAPSLOCK: $$mdi:apple-keyboard-caps$$
-    CAPS: $$mdi:apple-keyboard-caps$$
+    CAPSLOCK: $$mdi:keyboard-capslock$$
+    CAPS: $$mdi:keyboard-capslock$$
 
     # Sound
     C_MUTE: $$mdi:volume-off$$
