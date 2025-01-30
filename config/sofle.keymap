@@ -86,10 +86,10 @@
         layer_1 {
             bindings = <
 &kp GRAVE   &kp LALT       &kp TAB          &kp LS(TAB)      &kp F4        &kp LC(F5)    &mmv MOVE_UP     &mkp RCLK        &mkp MCLK     &kp KP_SLASH   &kp KP_ASTERISK   &kp DEL        &kp BSPC
-&kp TILDE   &kp K_BACK     &mkp LALT        &kp UP           &kp DEL       &kp BSPC      &mmv MOVE_DOWN   &kp EQUAL        &kp KP_N7     &kp KP_N8      &kp KP_N9         &kp KP_MINUS   &kp PSCRN
+&kp TILDE   &kp K_BACK     &trans           &kp UP           &kp DEL       &kp BSPC      &mmv MOVE_DOWN   &kp EQUAL        &kp KP_N7     &kp KP_N8      &kp KP_N9         &kp KP_MINUS   &kp PSCRN
 &kp LCTRL   &kp K_FORWARD  &kp LEFT         &kp DOWN         &kp RIGHT     &kp LBKT      &mmv MOVE_LEFT   &kp RBKT         &kp KP_N4     &kp KP_N5      &kp KP_N6         &kp KP_PLUS    &kp ENTER
 &kp LSHFT   &trans         &kp LC(F2)       &kp LC(LA(DOWN)) &kp LC(LS(V)) &kp LBRC      &mmv MOVE_RIGHT  &kp RBRC         &kp KP_N1     &kp KP_N2      &kp KP_N3         &kp MINUS      &kp RCTRL
-&kp C_MUTE  &trans         &trans           &trans           &trans        &trans        &mkp LCLK        &trans           &kp KP_N0     &M_zero        &kp KP_DOT        &trans
+&kp C_MUTE  &trans         &trans           &trans           &trans        &trans        &mkp LCLK        &trans           &trans        &kp KP_N0      &M_zero           &kp KP_DOT    
             >;
 
             display-name = "layer1";
@@ -102,7 +102,7 @@
 &trans     &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &trans           &trans        &trans        &mmv MOVE_DOWN   &trans           &bt BT_CLR    &bt BT_CLR_ALL  &trans            &kp LC(S)      &kp LC(P)
 &trans     &rgb_ug RGB_EFF &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &trans        &trans        &mmv MOVE_LEFT   &trans           &out OUT_USB  &out OUT_BLE    &trans            &kp LC(LS(S))  &kp LC(O)
 &trans     &rgb_ug RGB_BRI &rgb_ug RGB_BRD  &trans           &trans        &trans        &mmv MOVE_RIGHT  &M_VShtml        &M_VSlang     &kp LA(LS(F))   &trans            &trans         &trans
-&trans     &sys_reset      &soft_off        &bootloader      &trans        &trans        &mkp LCLK        &trans           &sys_reset    &soft_off       &bootloader       &trans
+&trans     &sys_reset      &soft_off        &bootloader      &trans        &trans        &mkp LCLK        &trans           &trans        &sys_reset      &soft_off         &bootloader
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
