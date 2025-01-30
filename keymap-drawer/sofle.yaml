@@ -27,7 +27,7 @@ layers:
   - O
   - P
   - {t: \, s: '|'}
-  - $$mdi:apple-keyboard-caps$$
+  - $$mdi:keyboard-capslock$$
   - A
   - S
   - D
@@ -40,7 +40,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - .
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:chevron-up$$
   - Z
   - X
   - C
@@ -52,22 +52,22 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:chevron-up$$
   - $$mdi:volume-off$$
   - HOME
   - PG UP
   - LGUI
   - {t: '$$mdi:keyboard-return$$', h: layer1}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:keyboard-space$$', h: CTRL}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:keyboard-space$$', h: CTRL}
   - {t: '$$mdi:backspace-reverse-outline$$', h: '2'}
-  - $$mdi:apple-keyboard-option$$
+  - ALT
   - PG DN
   - END
   layer1:
   - {t: '`', s: '~'}
-  - $$mdi:apple-keyboard-option$$
+  - ALT
   - $$mdi:keyboard-tab$$
   - $$mdi:keyboard-tab-reverse$$
   - F4
@@ -81,7 +81,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - '~'
   - BACK
-  - '&mkp LALT'
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-up-bold$$
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -92,7 +92,7 @@ layers:
   - KP 9
   - KP MINUS
   - $$mdi:printer-outline$$
-  - $$mdi:apple-keyboard-control$$
+  - CTRL
   - FORWARD
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -105,7 +105,7 @@ layers:
   - KP 6
   - KP PLUS
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:chevron-up$$
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+F2
   - Ctl+Alt+$$mdi:arrow-down-bold$$
@@ -117,7 +117,7 @@ layers:
   - KP 2
   - KP 3
   - {t: '-', s: _}
-  - $$mdi:apple-keyboard-control$$
+  - CTRL
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -126,10 +126,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - KP 0
   - '&M_zero'
   - KP DOT
-  - {t: '$$mdi:transfer$$', type: trans}
   '2':
   - '~'
   - F1
@@ -191,7 +191,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backup-restore$$', type: held}
+  - {type: held}
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
   - '&soft_off'
   - $$mdi:progress-download$$
-  - {t: '$$mdi:transfer$$', type: trans}
