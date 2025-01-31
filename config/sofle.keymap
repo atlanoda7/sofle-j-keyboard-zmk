@@ -26,6 +26,14 @@
             time-to-max-speed-ms = <400>;      // 500
             delay-ms = <0>;                   //   10
         };
+
+        mt {
+            tapping-term-ms = <300>;
+        };
+
+        lt {
+            tapping-term-ms = <300>;
+        };
     };
 
     macros {
@@ -62,7 +70,7 @@
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
-        tap-ms = <200>;
+        tap-ms = <30>;
     };
 
     keymap {
@@ -74,7 +82,7 @@
 &kp TAB     &kp Q          &kp W            &kp E           &kp R         &kp T           &mmv MOVE_DOWN  &kp Y            &kp U         &kp I         &kp O              &kp P          &kp BSLH
 &kp CAPS    &kp A          &kp S            &kp D           &kp F         &kp G           &mmv MOVE_LEFT  &kp H            &kp J         &kp K         &kp L              &kp SEMI       &kp APOS
 &kp LSHFT   &kp Z          &kp X            &kp C           &kp V         &kp B           &mmv MOVE_RIGHT &kp N            &kp M         &kp COMMA     &kp DOT            &kp FSLH       &kp RSHFT
-&mkp RCLK   &tog 2         &tog 1           &kp LGUI        &lt 1 ENTER   &mt LCTRL SPACE &mkp LCLK       &mt RCTRL SPACE  &lt 2 DELETE  &kp RALT      &kp HOME           &kp END
+&mkp LCLK   &tog 2         &tog 1           &kp LGUI        &lt 1 ENTER   &mt LCTRL SPACE &mkp RCLK       &mt RCTRL SPACE  &lt 2 DELETE  &kp RALT      &kp HOME           &kp END
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -96,15 +104,28 @@
         
         layer_2 {
             bindings = <
-&kp TILDE  &kp F1          &kp F2           &kp F3           &kp F4        &kp F5        &mmv MOVE_UP     &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3      &bt BT_SEL 4   &trans
-&trans     &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &trans           &trans        &trans        &mmv MOVE_DOWN   &trans           &bt BT_CLR    &bt BT_CLR_ALL  &trans            &kp LC(S)      &kp LC(P)
-&trans     &rgb_ug RGB_EFF &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &trans        &trans        &mmv MOVE_LEFT   &trans           &out OUT_USB  &out OUT_BLE    &trans            &kp LC(LS(S))  &kp LC(O)
+&kp TILDE  &kp F1          &kp F2           &kp F3           &kp F4        &kp F5        &mmv MOVE_UP     &trans           &trans        &trans          &trans            &trans         &trans
+&trans     &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &trans           &trans        &trans        &mmv MOVE_DOWN   &trans           &trans        &kp UP          &trans            &kp LC(S)      &kp LC(P)
+&trans     &rgb_ug RGB_EFF &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &trans        &trans        &mmv MOVE_LEFT   &trans           &kp LEFT      &kp DOWN        &kp RIGHT         &kp LC(LS(S))  &kp LC(O)
 &trans     &rgb_ug RGB_BRI &rgb_ug RGB_BRD  &trans           &trans        &trans        &mmv MOVE_RIGHT  &M_VShtml        &M_VSlang     &kp LA(LS(F))   &trans            &trans         &trans
-&trans     &sys_reset      &soft_off        &bootloader      &trans        &trans        &mkp LCLK        &trans           &trans        &sys_reset      &soft_off         &bootloader
+&mkp LCLK  &sys_reset      &soft_off        &bootloader      &trans        &trans        &mkp RCLK        &trans           &trans        &sys_reset      &soft_off         &bootloader
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
             display-name = "LAYER2";
+        };
+
+        layer_3 {
+            bindings = <
+&kp TILDE  &kp F1          &kp F2           &kp F3           &kp F4        &kp F5        &kp UP          &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3      &bt BT_SEL 4   &trans
+&trans     &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &trans           &trans        &trans        &kp DOWN        &trans           &bt BT_CLR    &bt BT_CLR_ALL  &trans            &trans         &trans
+&trans     &rgb_ug RGB_EFF &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &trans        &trans        &kp LEFT        &trans           &out OUT_USB  &out OUT_BLE    &trans            &trans         &trans
+&trans     &rgb_ug RGB_BRI &rgb_ug RGB_BRD  &trans           &trans        &trans        &kp RIGHT       &trans           &trans        &trans          &trans            &trans         &trans
+&trans     &sys_reset      &soft_off        &bootloader      &trans        &trans        &kp ENTER       &trans           &trans        &sys_reset      &soft_off         &bootloader
+            >;
+
+            sensor-bindings = <&inc_dec_kp SCRL_RIGHT SCRL_LEFT>;
+            display-name = "LAYER3";
         };
     };
 };
