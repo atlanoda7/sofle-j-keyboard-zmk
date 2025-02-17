@@ -28,7 +28,7 @@ draw_config:
 
     /* Color accent for held keys */
     rect.held, rect.combo.held {
-        fill: #ffc;
+        fill: #D7EDF5;
     }
 
     /* Technique borrowed and extended from https://github.com/englmaxi/zmk-config/blob/master/keymap-drawer/config.yaml */
@@ -189,25 +189,25 @@ parse_config:
       hold: ''
       shifted: ''
     "&mmv MOVE_LEFT":
-      tap: $$mdi:menu-left$$
+      shifted: $$mdi:menu-left$$
       hold: ''
-      shifted: $$mdi:mouse$$
+      tap: $$mdi:mouse$$
     "&mmv MOVE_RIGHT":
-      tap: $$mdi:menu-right$$
+      shifted: $$mdi:menu-right$$
       hold: ''
-      shifted: $$mdi:mouse$$
+      tap: $$mdi:mouse$$
     "&mmv MOVE_UP":
-      tap: $$mdi:menu-up$$
+      shifted: $$mdi:menu-up$$
       hold: ''
-      shifted: $$mdi:mouse$$
+      tap: $$mdi:mouse$$
     "&mmv MOVE_DOWN":
-      tap: $$mdi:menu-down$$
+      shifted: $$mdi:menu-down$$
       hold: ''
-      shifted: $$mdi:mouse$$
+      tap: $$mdi:mouse$$
     "&mkp LCLK":
-      tap: $$mdi:mouse-left-click-outline$$
+      tap: $$mdi:mouse-left-click$$
     "&mkp RCLK":
-      tap: $$mdi:mouse-right-click-outline$$
+      tap: $$mdi:mouse-right-click$$
     "&mkp MCLK":
       tap: $$mdi:mouse-scroll-wheel$$
     # Modifiers
@@ -230,24 +230,19 @@ parse_config:
     # Bluetooth
     "&bt BT_SEL 0":
       shifted: $$mdi:bluetooth-connect$$
-      tap: ""
-      hold: 1
+      tap: 1
     "&bt BT_SEL 1":
       shifted: $$mdi:bluetooth-connect$$
-      tap: ""
-      hold: 2
+      tap: 2
     "&bt BT_SEL 2":
       shifted: $$mdi:bluetooth-connect$$
-      tap: ""
-      hold: 3
+      tap: 3
     "&bt BT_SEL 3":
       shifted: $$mdi:bluetooth-connect$$
-      tap: ""
-      hold: 4
+      tap: 4
     "&bt BT_SEL 4":
       shifted: $$mdi:bluetooth-connect$$
-      tap: ""
-      hold: 5
+      tap: 5
     "&out OUT_TOG":
       shifted: $$mdi:usb$$
       tap: $$mdi:toggle-switch$$
@@ -487,6 +482,15 @@ parse_config:
     # Bluetooth
     BT_CLR: $$mdi:bluetooth-off$$
     BT_SEL: $$mdi:bluetooth-connect$$
+    BT_CLR_ALL: 
+      shifted: "ALL"
+      tap: $$mdi:bluetooth-off$$
+    OUT_USB: 
+      shifted: "OUT"
+      tap: $$mdi:usb$$
+    OUT_BLE: 
+      shifted: "OUT"
+      tap: $$mdi:bluetooth-connect$$
 
     # Settings
     C_BRI_UP: $$mdi:brightness-5$$
@@ -500,6 +504,7 @@ parse_config:
     C_AL_LOCK: $$mdi:lock$$
     K_CANCEL: $$mdi:close-box$$
     K_FIND: $$mdi:apple-finder$$
+
     # Command + 
     LG(A):
       tap: 'A'
@@ -532,6 +537,47 @@ parse_config:
     RG(RS(V)):
       tap: $$mdi:video$$
       hold: zoom
+
+    # Shortcuts
+    LC(S): $$mdi:content-save$$
+    LC(LS(S)): $$mdi:content-save-edit$$
+    LC(P): $$mdi:printer$$
+    LC(O): $$mdi:folder-open$$
+    LC(LA(DEL)): "CTL ALT DEL"
+    LC(F5): $$mdi:web-refresh$$
+    LC(F2):
+      tap: $$mdi:select-all$$
+      hold: "VS Code"
+    M_VShtml : $$material:HTML$$
+    M_VSlang:
+      tap: $$material:Code$$
+      shifted: $$material:Language$$
+      hold: "VS Code"
+    LA(LS(F)):
+      tap: $$mdi:language-html5$$
+      shifted: "FORMAT"
+      hold: "VS Code"
+    LC(LS(V)):
+      tap: $$mdi:content-paste$$
+      shifted: "TEXT"
+    LC(LEFT):
+      tap: $$mdi:format-color-highlight$$
+      shifted: $$mdi:arrow-left-thin$$
+    LC(DOWN):
+      tap: $$mdi:format-color-highlight$$
+      shifted: $$mdi:arrow-down-thin$$
+    LC(RIGHT):
+      tap: $$mdi:format-color-highlight$$
+      shifted: $$mdi:arrow-right-thin$$
+
+  zmk_macros:
+    M_VShtml: $$material:HTML$$
+    M_VSlang:
+      tap: $$material:Code$$
+      shifted: $$material:Language$$
+      hold: "VS Code"
+    M_zero: "00"
+
 
   zmk_combos:
     combo_to_2:
