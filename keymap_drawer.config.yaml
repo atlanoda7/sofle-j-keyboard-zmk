@@ -166,6 +166,18 @@ parse_config:
     "&hm RIGHT_ALT L":
       tap: 'L'
       shifted: "ALT"
+    
+    # custom mods
+    "&rpi LCTRL SPACE": 
+      tap: $$mdi:keyboard-space$$
+      hold: "CTRL"
+    "&rpi RCTRL SPACE":
+      tap: $$mdi:keyboard-space$$
+      hold: "CTRL"
+    "&tesc":
+      tap: "ESC"
+      shifted: "~"
+
     # self behaviors
     "&hm LG(LS(V)) P":
       tap: 'P'
