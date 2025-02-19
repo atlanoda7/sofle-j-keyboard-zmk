@@ -107,7 +107,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$material:shift$$
   - PG DN
-  - {t: '$$material:quick_reference_all_24$$', h: VS Code}
+  - {t: '$$material:quick_reference_all$$', h: VS Code}
   - {t: '$$mdi:cursor-text$$', s: '$$mdi:arrow-expand-down$$'}
   - {t: '$$mdi:content-paste$$', s: TEXT}
   - '{'
@@ -178,7 +178,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:mouse$$', s: '$$mdi:menu-right$$'}
   - $$material:html$$
-  - {t: '$$material:Code$$', h: VS Code, s: '$$material:Language$$'}
+  - {t: '$$material:code$$', h: VS Code, s: '$$material:language$$'}
   - {t: '$$mdi:language-html5$$', h: VS Code, s: FORMAT}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
