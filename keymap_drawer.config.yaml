@@ -118,7 +118,10 @@ parse_config:
     type: trans
 
   raw_binding_map:
-    # Layers
+
+    # LAYERS
+    
+    ## layer-Tap
     "&ltq 1 BACKSPACE":
       tap:  $$mdi:backspace$$
       hold: '$$mdi:navigation-variant$$'
@@ -134,6 +137,8 @@ parse_config:
     "&ltq 1 DELETE":
       tap: $$mdi:backspace-reverse-outline$$
       hold: $$mdi:navigation-variant$$
+
+    ## Layer Toggle
     "&tog 1":
       tap: $$mdi:toggle-switch$$
       shifted: '1'
@@ -143,8 +148,23 @@ parse_config:
     "&tog 3":
       tap: $$mdi:toggle-switch$$
       shifted: '3'
+
+    #-----------------------------------------------
     
-    # Home rows
+    # MODIFIERS
+
+    # Custom mods
+    "&rpi LCTRL SPACE": 
+      tap: $$mdi:keyboard-space$$
+      hold: "CTRL"
+    "&rpi RCTRL SPACE":
+      tap: $$mdi:keyboard-space$$
+      hold: "CTRL"
+    "&tesc":
+      tap: "ESC"
+      shifted: "~"
+
+    ## Home Row Mods
     "&hm LEFT_GUI A":
       tap: 'A'
       shifted: "WIN"
@@ -156,34 +176,33 @@ parse_config:
       shifted: "WIN"
     "&hm LEFT_SHIFT F":
       tap: 'F'
-      shifted: $$mdi:chevron-up$$
+      shifted: $$material:shift$$
     "&hm RIGHT_SHIFT J":
       tap: 'J'
-      shifted: $$mdi:chevron-up$$
+      shifted: $$material:shift$$
     "&hm RIGHT_CONTROL K":
       tap: 'K'
       shifted: "WIN"
     "&hm RIGHT_ALT L":
       tap: 'L'
       shifted: "ALT"
-    
-    # custom mods
-    "&rpi LCTRL SPACE": 
-      tap: $$mdi:keyboard-space$$
-      hold: "CTRL"
-    "&rpi RCTRL SPACE":
-      tap: $$mdi:keyboard-space$$
-      hold: "CTRL"
-    "&tesc":
-      tap: "ESC"
-      shifted: "~"
 
     # self behaviors
     "&hm LG(LS(V)) P":
       tap: 'P'
       shifted: $$mdi:content-copy$$
     
-    # Mouse
+    # Other modifiers
+    "&caps_word": $$mdi:alpha-w-box$$
+    "&kt RSHIFT":
+      tap: $$material:shift$$
+      hold: $$mdi:toggle-switch$$
+
+    #-----------------------------------------------
+
+    # MOUSE
+
+    ## Mouse Scroll
     "&msc SCRL_UP":
       tap: $$mdi:pan-up$$
       hold: ''
@@ -200,6 +219,8 @@ parse_config:
       tap: $$mdi:pan-right$$
       hold: ''
       shifted: ''
+    
+    ## Mouse Move
     "&mmv MOVE_LEFT":
       shifted: $$mdi:menu-left$$
       hold: ''
@@ -216,17 +237,17 @@ parse_config:
       shifted: $$mdi:menu-down$$
       hold: ''
       tap: $$mdi:mouse$$
+    
+    ## Mouse Click
     "&mkp LCLK":
       tap: $$mdi:mouse-left-click$$
     "&mkp RCLK":
       tap: $$mdi:mouse-right-click$$
     "&mkp MCLK":
       tap: $$mdi:mouse-scroll-wheel$$
-    # Modifiers
-    "&caps_word": $$mdi:alpha-w-box$$
-    "&kt RSHIFT":
-      tap: $$mdi:chevron-up$$
-      hold: $$mdi:toggle-switch$$
+
+  #-----------------------------------------------
+
 
     # Empty
     "&none":
@@ -239,7 +260,11 @@ parse_config:
       tap: $$mdi:backspace$$
       shifted: $$mdi:backspace-reverse-outline$$
 
-    # Bluetooth
+  #-----------------------------------------------
+
+    # BLUETOOTH
+
+    ## BT Select connection
     "&bt BT_SEL 0":
       shifted: $$mdi:bluetooth-connect$$
       tap: 1
@@ -255,28 +280,60 @@ parse_config:
     "&bt BT_SEL 4":
       shifted: $$mdi:bluetooth-connect$$
       tap: 5
-    "&out OUT_TOG":
-      shifted: $$mdi:usb$$
-      tap: $$mdi:toggle-switch$$
-      hold: $$mdi:bluetooth$$
-    "&bt BT_PRV":
-      shifted: $$mdi:bluetooth-connect$$
-      tap: ""
-      hold: $$mdi:arrow-up-bold$$
+    
+    ## BT Select
     "&bt BT_NXT":
       shifted: $$mdi:bluetooth-connect$$
       tap: ""
       hold: $$mdi:arrow-down-bold$$
-    # Reset
+    "&bt BT_PRV":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
+      hold: $$mdi:arrow-up-bold$$
+
+    ## Output
+    "&out OUT_TOG":
+      shifted: $$mdi:usb$$
+      tap: $$mdi:toggle-switch$$
+      hold: $$mdi:bluetooth$$
+    "&out OUT_USB":
+      shifted: "OUT"
+      tap: $$mdi:usb$$
+    "&out OUT_BLE": 
+      shifted: "OUT"
+      tap: $$mdi:bluetooth-connect$$
+
+  #-----------------------------------------------  
+	  
+    # SYSTEM
+
     "&sys_reset":
       type: bootloader
       tap: $$mdi:backup-restore$$
     "&bootloader":
       tap: $$mdi:progress-download$$
 
+    #-----------------------------------------------
+
+    # MACROS
+
+    "&M_VShtml": $$material:HTML$$
+    "&M_VSlang":
+      tap: $$material:Code$$
+      shifted: $$material:Language$$
+      hold: "VS Code"
+    "&M_zero": "00"
+
+
+  #-------------------------------------------------
+  #-------------------------------------------------
+
   # ZMK
   zmk_keycode_map:
-    # Symbols
+
+    # STANDARD KEYS
+
+    ## Symbols
     EXCLAMATION: "!"
     EXCL: "!"
     AT_SIGN: "@"
@@ -337,11 +394,14 @@ parse_config:
     SQT:
       tap: "'"
       shifted: '"'
-    APOSTROPHE: <
-    APOS: .
+    APOSTROPHE: 
+      tap: "'"
+      shifted: '"'
+    APOS:
+      tap: "'"
+      shifted: '"'
     DOUBLE_QUOTES: '"'
     DQT: '"'
-
     LESS_THAN: <
     LT: <
     PERIOD: '.'
@@ -377,7 +437,7 @@ parse_config:
     NUHS: "#"
     TILDE2: "~"
 
-    # Numbers
+    ## Numbers
     N1:
       tap: 1
       shifted: "!"
@@ -409,29 +469,52 @@ parse_config:
       tap: 0
       shifted: ")"
 
-    # Modifiers
+    ## Numpad
+    KP_SLASH: "/"
+    KP_ASTERISK: "*"
+    KP_PLUS: "+"
+    KP_DOT: "."
+    KP_N0: "0"
+    KP_N1: "1"
+    KP_N2: "2"
+    KP_N3: "3"
+    KP_N4: "4"
+    KP_N5: "5"
+    KP_N6: "6"
+    KP_N7: "7"
+    KP_N8: "8"
+    KP_N9: "9"
+
+    ## Modifiers
     LCTRL: "CTRL"
     LEFT_CONTROL: "CTRL"
     LALT: "ALT"
     LEFT_ALT: "ALT"
-    LSHIFT: $$mdi:chevron-up$$
-    LEFT_SHIFT: $$mdi:chevron-up$$
-    LSHFT: $$mdi:chevron-up$$
+    LSHIFT: $$material:shift$$
+    LEFT_SHIFT: $$material:shift$$
+    LSHFT: $$material:shift$$
     LCMD: $$mdi:apple-keyboard-command$$
     LG: $$mdi:microsoft$$
     LEFT_GUI: $$mdi:microsoft$$
+    LGUI: $$mdi:microsoft$$
     LEFT_COMMAND: $$mdi:apple-keyboard-command$$
     RCTRL: "CTRL"
     RIGHT_CONTROL: "CTRL"
     RALT: "ALT"
     RIGHT_ALT: "ALT"
-    RSHIFT: $$mdi:chevron-up$$
-    RIGHT_SHIFT: $$mdi:chevron-up$$
-    RSHFT: $$mdi:chevron-up$$
+    RSHIFT: $$material:shift$$
+    RIGHT_SHIFT: $$material:shift$$
+    RSHFT: $$material:shift$$
     RCMD: $$mdi:apple-keyboard-command$$
     RG: $$mdi:microsoft$$
-    PSCRN: $$mdi:printer-outline$$
+    RGUI: $$mdi:microsoft$$
+    RIGHT_GUI: $$mdi:microsoft$$
     RIGHT_COMMAND: $$mdi:apple-keyboard-command$$
+    ### "Meh" key
+    LS(LC(LALT)): $$mdi:star-three-points$$
+
+    ## Navigation
+    PSCRN: $$mdi:printer-outline$$
     PAGE_UP:
       tap: 'PgUp'
       shifted: ''
@@ -441,10 +524,10 @@ parse_config:
     INSERT:
        tap: 'Ins'
        shifted: ''
-    # "Meh" key
-    LS(LC(LALT)): $$mdi:star-three-points$$
-
-    # Arrows
+    K_APP: $$mdi:menu$$
+    K_CALC: $$mdi:calculator$$
+    
+    ## Arrows
     UP: $$mdi:arrow-up-bold$$
     UP_ARROW: $$mdi:arrow-up-bold$$
     DOWN: $$mdi:arrow-down-bold$$
@@ -454,7 +537,7 @@ parse_config:
     RIGHT: $$mdi:arrow-right-bold$$
     RIGHT_ARROW: $$mdi:arrow-right-bold$$
 
-    # Whitespace
+    ## Whitespace
     ENTER:
       type: enter
       tap: $$mdi:keyboard-return$$
@@ -475,49 +558,89 @@ parse_config:
     DELETE: $$mdi:backspace-reverse-outline$$
     DEL: $$mdi:backspace-reverse-outline$$
 
-    # Locks
-    CAPSLOCK: $$mdi:keyboard-caps$$
-    CAPS: $$mdi:keyboard-caps$$
+    ## Locks
+    CAPSLOCK: $$material:shift_lock$$
+    CAPS: $$material:shift_lock$$
 
-    # Sound
+    #-----------------------------------------------
+
+    # EXTRAS
+
+    ## Sound
     C_MUTE: $$mdi:volume-off$$
     C_VOL_UP: $$mdi:volume-high$$
     C_VOL_DN: $$mdi:volume-low$$
     C_VOLUME_UP: $$mdi:volume-high$$
     C_VOLUME_DOWN: $$mdi:volume-low$$
 
-    # Media
+    ## Media
     C_NEXT: $$mdi:skip-next$$
     C_PREV: $$mdi:skip-previous$$
     C_PP: $$mdi:play-pause$$
 
-    # Bluetooth
+    ## Bluetooth
     BT_CLR: $$mdi:bluetooth-off$$
     BT_SEL: $$mdi:bluetooth-connect$$
     BT_CLR_ALL: 
       shifted: "ALL"
       tap: $$mdi:bluetooth-off$$
-    OUT_USB: 
-      shifted: "OUT"
-      tap: $$mdi:usb$$
-    OUT_BLE: 
-      shifted: "OUT"
-      tap: $$mdi:bluetooth-connect$$
 
-    # Settings
+    ## Settings
     C_BRI_UP: $$mdi:brightness-5$$
     C_BRIGHTNESS_INC: $$mdi:brightness-5$$
     C_BRI_DN: $$mdi:brightness-7$$
     C_BRI_DEC: $$mdi:brightness-7$$
     C_BRIGHTNESS_DEC: $$mdi:brightness-7$$
 
-    # System
+    ## System
     C_POWER: $$mdi:power-standby$$
     C_AL_LOCK: $$mdi:lock$$
     K_CANCEL: $$mdi:close-box$$
     K_FIND: $$mdi:apple-finder$$
 
-    # Command + 
+    ## Shortcuts
+    LC(S): $$mdi:content-save$$
+    LC(LS(S)): $$mdi:content-save-edit$$
+    LC(P): $$mdi:printer$$
+    LC(O): $$mdi:folder-open$$
+    LC(LA(DEL)): "CTL ALT DEL"
+    LC(F5): $$mdi:web-refresh$$
+    LC(F2):
+      tap: $$material:quick_reference_all_24$$
+      hold: "VS Code"
+    LA(LS(F)):
+      tap: $$mdi:language-html5$$
+      shifted: "FORMAT"
+      hold: "VS Code"
+    LC(LS(V)):
+      tap: $$mdi:content-paste$$
+      shifted: "TEXT"
+    LC(LA(DOWN)):
+      tap: $$mdi:cursor-text$$
+      shifted: $$mdi:arrow-expand-down$$
+    LS(LEFT):
+      tap: $$mdi:format-color-highlight$$
+      shifted: $$mdi:arrow-left-thin$$
+    LS(DOWN):
+      tap: $$mdi:format-color-highlight$$
+      shifted: $$mdi:arrow-down-thin$$
+    LS(RIGHT):
+      tap: $$mdi:format-color-highlight$$
+      shifted: $$mdi:arrow-right-thin$$
+    LC(LEFT):
+      tap: $$material:match-word$$
+      shifted: $$mdi:arrow-left-thin$$
+    LC(DOWN):
+      tap: $$material:match-word$$
+      shifted: $$mdi:arrow-down-thin$$
+    LC(RIGHT):
+      tap: $$material:match-word$$
+      shifted: $$mdi:arrow-right-thin$$
+    LC(UP):
+      tap: $$material:match-word$$
+      shifted: $$mdi:arrow-right-thin$$
+    
+    ## Command + 
     LG(A):
       tap: 'A'
       hold: $$mdi:apple-keyboard-command$$
@@ -542,55 +665,15 @@ parse_config:
     LG(V):
       tap: 'V'
       hold: $$mdi:apple-keyboard-command$$
-    # Zoom
+
+    ## Zoom
     RG(RS(A)):
       tap: $$mdi:microphone$$
       hold: zoom
     RG(RS(V)):
       tap: $$mdi:video$$
       hold: zoom
-
-    # Shortcuts
-    LC(S): $$mdi:content-save$$
-    LC(LS(S)): $$mdi:content-save-edit$$
-    LC(P): $$mdi:printer$$
-    LC(O): $$mdi:folder-open$$
-    LC(LA(DEL)): "CTL ALT DEL"
-    LC(F5): $$mdi:web-refresh$$
-    LC(F2):
-      tap: $$mdi:select-all$$
-      hold: "VS Code"
-    M_VShtml : $$material:HTML$$
-    M_VSlang:
-      tap: $$material:Code$$
-      shifted: $$material:Language$$
-      hold: "VS Code"
-    LA(LS(F)):
-      tap: $$mdi:language-html5$$
-      shifted: "FORMAT"
-      hold: "VS Code"
-    LC(LS(V)):
-      tap: $$mdi:content-paste$$
-      shifted: "TEXT"
-    LC(LEFT):
-      tap: $$mdi:format-color-highlight$$
-      shifted: $$mdi:arrow-left-thin$$
-    LC(DOWN):
-      tap: $$mdi:format-color-highlight$$
-      shifted: $$mdi:arrow-down-thin$$
-    LC(RIGHT):
-      tap: $$mdi:format-color-highlight$$
-      shifted: $$mdi:arrow-right-thin$$
-
-  zmk_macros:
-    M_VShtml: $$material:HTML$$
-    M_VSlang:
-      tap: $$material:Code$$
-      shifted: $$material:Language$$
-      hold: "VS Code"
-    M_zero: "00"
-
-
+ 
   zmk_combos:
     combo_to_2:
       align: top

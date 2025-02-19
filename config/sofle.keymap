@@ -119,14 +119,14 @@
 // |   ~    |  BACK  | FWRD   |  UP    |  DEL   |  BSPC  |                          |    =   |    7   |    8   |    9   |    -   |  MENU  |
 // | LCTRL  |  PGUP  |  LFT   |  DWN   |  RGT   |   [    |                          |    ]   |    4   |    5   |    6   |    +   |   ENT  |
 // | LSHFT  |  PGDN  | CTLF2  | CALDN  | CTSFV  |   {    | VOL/MUTE  |  |  AROW/ENT |    }   |    1   |    2   |    3   |    =   |  RSHFT |
-//                   |  ""    |        |  ""    |  []    |    ""     |  |     ""    |    ""  |    0   |    00  |    .   |
+//                   |   ""   |   ""   |   ""   |  []    |    ""     |  |     ""    |   ""   |    0   |    00  |    .   |
 // ----------------------------------------------------------------------------------------------------------------------------------------
             bindings = <
 &kp  GRAVE       &kp  LALT        &kp  TAB         &kp  LS(TAB)     &kp  F4          &kp  LC(F5)      &kp  UP          &kp  PSCRN       &kp  INSERT      &kp  KP_SLASH    &kp  KP_ASTERISK &kp  DEL         &kp  BSPC
 &kp  TILDE       &kp  K_BACK      &kp  K_FORWARD   &kp  UP          &kp  DEL         &kp  BSPC        &kp  DOWN        &kp  EQUAL       &kp  KP_N7       &kp  KP_N8       &kp  KP_N9       &kp  MINUS       &kp  K_APP
 &kp  LCTRL       &kp  PG_UP       &kp  LEFT        &kp  DOWN        &kp  RIGHT       &kp  LBKT        &kp  LEFT        &kp  RBKT        &kp  KP_N4       &kp  KP_N5       &kp  KP_N6       &kp  KP_PLUS     &kp  ENTER
 &kp  LSHFT       &kp  PG_DN       &kp  LC(F2)      &kp LC(LA(DOWN)) &kp  LC(LS(V))   &kp  LBRC        &kp  RIGHT       &kp  RBRC        &kp  KP_N1       &kp  KP_N2       &kp  KP_N3       &kp  EQUAL       &kp  RSHFT
-&kp  C_MUTE      &trans           &none            &trans           &trans           &trans           &kp  ENTER       &trans           &trans           &kp  KP_N0       &M_zero          &kp  KP_DOT    
+&kp  C_MUTE      &trans           &trans           &trans           &trans           &trans           &kp  ENTER       &trans           &trans           &kp  KP_N0       &M_zero          &kp  KP_DOT    
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -135,17 +135,17 @@
         
         layer_2 {
 // ----------------------------------------------------------------------------------------------------------------------------------------
-// |   ""   |   F1   |   F2   |   F3   |   F4   |   F5   |                          |   ""   |   ""   |   ""   |   ""   |   ""   |  PSCRN |
+// |   ""   |   F1   |   F2   |   F3   |   F4   |   F5   |                          |   ""   |   ""   |   ""   |   ""   |  CALC  |  PSCRN |
 // |   ""   |  PGUP  |  BACK  |  M_UP  |  FWRD  | SCRLL  |                          |   ""   |  LCLK  |   UP   |  RCLK  |  CTRLS |  CTRLP |
 // |   ""   |  PGDN  | M_LFT  | M_DWN  | M_RGT  | SCRLR  |                          |   ""   |   LFT  |   DWN  |   RGT  |  CTSHS |  CTRLO |
-// |   ""   |   ""   | CTLFT  | CTDWN  | CTRGT  |   ""   | HSCRL/LCK |  |  MMV/RCLK |  html  |  CTLKM |  ASHF  |   ""   |   ""   | CTADEL |
-//                   |  ""    |  ""    |  ""    |   ""   |    ""     |  |     ""    |   []   |   ""   |   ""   |   ""   |
+// |   ""   |   ""   | SFLFT  | SFDWN  | SFRGT  |   ""   | HSCRL/LCK |  |  MMV/RCLK |  html  |  CTLKM |  ASHF  |   ""   |   ""   | CTADEL |
+//                   |   ""   |   ""   |   ""   |   ""   |    ""     |  |     ""    |   []   |   ""   |   ""   |   ""   |
 // ----------------------------------------------------------------------------------------------------------------------------------------
             bindings = <
-&trans           &kp  F1          &kp  F2          &kp  F3          &kp  F4          &kp  F5          &mmv MOVE_UP     &trans           &trans           &trans           &trans           &trans           &kp  PSCRN
+&trans           &kp  F1          &kp  F2          &kp  F3          &kp  F4          &kp  F5          &mmv MOVE_UP     &trans           &trans           &trans           &trans           &kp K_CALC       &kp  PSCRN
 &trans           &kp  PG_UP       &kp  K_BACK      &mmv MOVE_UP     &kp  K_FORWARD   &msc SCRL_LEFT   &mmv MOVE_DOWN   &msc SCRL_UP     &mkp LCLK        &kp  UP          &mkp RCLK        &kp  LC(S)       &kp  LC(P)
 &trans           &kp  PG_DN       &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &msc SCRL_RIGHT  &mmv MOVE_LEFT   &msc SCRL_DOWN   &kp  LEFT        &kp  DOWN        &kp  RIGHT       &kp  LC(LS(S))   &kp  LC(O)
-&trans           &trans           &kp  LC(LEFT)    &kp  LC(DOWN)    &kp  LC(RIGHT)   &trans           &mmv MOVE_RIGHT  &M_VShtml        &M_VSlang        &kp  LA(LS(F))   &trans           &trans           &kp LC(LA(DEL))
+&trans           &trans           &kp  LS(LEFT)    &kp  LS(DOWN)    &kp  LS(RIGHT)   &trans           &mmv MOVE_RIGHT  &M_VShtml        &M_VSlang        &kp  LA(LS(F))   &trans           &trans           &kp LC(LA(DEL))
 &mkp LCLK        &trans           &trans           &trans           &trans           &trans           &mkp RCLK        &trans           &trans           &trans           &trans           &trans
             >;
 
@@ -157,17 +157,17 @@
 
 // ----------------------------------------------------------------------------------------------------------------------------------------
 // |   ""   |   ""   |   ""   |   ""   |   ""   |   ""   |                          |   BT1  |   BT2  |   BT3  |   BT4  |   BT5  |   ""   |
-// |   ""   |   ""   |   ""   |   ""   |   ""   |   ""   |                          |  OTUSB |  RGBON | RGBEFF | RGBBRI |   ""   |   ""   |
-// |   ""   |   ""   |   ""   |   ""   |   ""   |   ""   |                          |  OTBT  | RGBOFF | RGBERR | RGBBRD |   ""   |   ""   |
+// |   ""   |   ""   |   ""   |  CTUP  |   ""   |   ""   |                          |  OTUSB |  RGBON | RGBEFF | RGBBRI |   ""   |   ""   |
+// |   ""   |   ""   | CTLFT  | CTDWN  | CTRGT  |   ""   |                          |  OTBT  | RGBOFF | RGBERR | RGBBRD |   ""   |   ""   |
 // |   ""   |   ""   |   ""   |   ""   |   ""   |   ""   | BRI/LCLK  |  |  AROW/ENT |  BTCLR |  BTCLA | RGBSPI |   ""   |   ""   |   ""   |
-//                   | RESET  |  SOFF  |  BOOT  |   ""   |    ""     |  |     ""    |   ""   |  RESET |   SOFF |   BOOT |
+//                   | RESET  |  SOFF  |  BOOT  |   ""   |    ""     |  |     ""    |   ""   |   ""   |   []   |   ""   |
 // ----------------------------------------------------------------------------------------------------------------------------------------
             bindings = <
 &trans           &trans           &trans           &trans           &trans           &trans           &kp  UP          &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &trans
-&trans           &trans           &trans           &trans           &trans           &trans           &kp  DOWN        &out OUT_USB     &rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &trans           &trans
-&trans           &trans           &trans           &trans           &trans           &trans           &kp  LEFT        &out OUT_BLE     &rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &trans           &trans
+&trans           &trans           &trans           &kp LC(UP)       &trans           &trans           &kp  DOWN        &out OUT_USB     &rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &trans           &trans
+&trans           &trans           &kp  LC(LEFT)    &kp  LC(DOWN)    &kp  LC(RIGHT)   &trans           &kp  LEFT        &out OUT_BLE     &rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &trans           &trans
 &trans           &trans           &trans           &trans           &trans           &trans           &kp  RIGHT       &bt  BT_CLR      &bt  BT_CLR_ALL  &rgb_ug RGB_SPI  &trans           &trans           &trans
-&trans           &sys_reset       &soft_off        &bootloader      &trans           &trans           &kp  ENTER       &trans           &trans           &sys_reset       &soft_off        &bootloader
+&trans           &sys_reset       &soft_off        &bootloader      &trans           &trans           &kp  ENTER       &trans           &trans           &trans           &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
@@ -178,10 +178,10 @@
 
 // ----------------------------------------------------------------------------------------------------------------------------------------
 // |  BSPC  |   6    |   7    |   8    |   9    |   0    |                          |    1   |    2   |    3   |    4   |    5   |   ESC  |
-// |   \    |   Y    |   U    |   I    |   O    |   P    |                          |   TAB  |    Q   |    W   |    E   |    R   |    T   |
-// |   '    |   H    |   J    |   K    |   L    |   ;    |                          |  CAPS  |    A   |    S   |    D   |    F   |    G   |
-// | RSHFT  |   N    |   M    |   ,    |   .    |   /    | CTSFTAROW |  |  AROW/ENT |  LSHFT |    Z   |    X   |    C   |    V   |    B   |
-//                   |   ""   |   ""   |  RALT  |  DEL   | SPC/LCTRL |  | SPC/RCTRL |   ENT  |  LGUI  |   ""   |   ""   |
+// |   \    |   Y    |   U    |   I    |   O    |   P    |                          |    Q   |    W   |    E   |    R   |    T   |   TAB  |
+// |   '    |   H    |   J    |   K    |   L    |   ;    |                          |    A   |    S   |    D   |    F   |    G   |  CAPS  |
+// | RSHFT  |   N    |   M    |   ,    |   .    |   /    | CTSFTAROW |  |  AROW/ENT |    Z   |    X   |    C   |    V   |    B   |  LSHFT |
+//                   |   []   |   ""   |  RALT  |  DEL   | SPC/LCTRL |  | SPC/RCTRL |   ENT  |  LGUI  |   ""   |   []   |
 // ----------------------------------------------------------------------------------------------------------------------------------------
             bindings = <
 &kp  BACKSPACE   &kp  N6          &kp  N7          &kp  N8          &kp  N9          &kp  N0          &kp  UP          &kp  N1          &kp  N2          &kp  N3          &kp  N4          &kp  N5          &tesc
