@@ -628,16 +628,16 @@ parse_config:
       tap: $$mdi:format-color-highlight$$
       shifted: $$mdi:arrow-right-thin$$
     LC(LEFT):
-      tap: $$material:match-word$$
+      tap: $$material:match_word$$
       shifted: $$mdi:arrow-left-thin$$
     LC(DOWN):
-      tap: $$material:match-word$$
+      tap: $$material:match_word$$
       shifted: $$mdi:arrow-down-thin$$
     LC(RIGHT):
-      tap: $$material:match-word$$
+      tap: $$material:match_word$$
       shifted: $$mdi:arrow-right-thin$$
     LC(UP):
-      tap: $$material:match-word$$
+      tap: $$material:match_word$$
       shifted: $$mdi:arrow-right-thin$$
     
     ## Command + 
