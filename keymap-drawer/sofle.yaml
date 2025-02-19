@@ -212,7 +212,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$material:match-word$$', s: '$$mdi:arrow-right-thin$$'}
+  - {t: '$$material:match_word$$', s: '$$mdi:arrow-right-thin$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-down-bold$$
@@ -224,9 +224,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$material:match-word$$', s: '$$mdi:arrow-left-thin$$'}
-  - {t: '$$material:match-word$$', s: '$$mdi:arrow-down-thin$$'}
-  - {t: '$$material:match-word$$', s: '$$mdi:arrow-right-thin$$'}
+  - {t: '$$material:match_word$$', s: '$$mdi:arrow-left-thin$$'}
+  - {t: '$$material:match_word$$', s: '$$mdi:arrow-down-thin$$'}
+  - {t: '$$material:match_word$$', s: '$$mdi:arrow-right-thin$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:bluetooth-connect$$', s: OUT}
