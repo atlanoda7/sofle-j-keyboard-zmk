@@ -27,7 +27,7 @@ layers:
   - O
   - P
   - {t: \, s: '|'}
-  - $$mdi:keyboard-caps$$
+  - $$material:shift_lock$$
   - A
   - S
   - D
@@ -39,8 +39,8 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - .
-  - $$mdi:chevron-up$$
+  - {t: '''', s: '"'}
+  - $$material:shift$$
   - Z
   - X
   - C
@@ -52,18 +52,18 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:chevron-up$$
+  - $$material:shift$$
   - $$mdi:mouse-left-click$$
   - {t: HOME, h: 4_ALPH2}
   - {t: '$$mdi:toggle-switch$$', s: '1'}
-  - LGUI
+  - $$mdi:microsoft$$
   - {t: '$$mdi:keyboard-return$$', h: 1_NUM}
   - {t: '$$mdi:keyboard-space$$', h: CTRL}
   - $$mdi:mouse-right-click$$
   - {t: '$$mdi:keyboard-space$$', h: CTRL}
   - {t: '$$mdi:backspace-reverse-outline$$', h: 2_NAV}
   - ALT
-  - {t: APP, h: 3_RGB_B}
+  - {t: '$$mdi:menu$$', h: 3_RGB_B}
   - {t: END, h: 4_ALPH2}
   1_NUM:
   - {t: '`', s: '~'}
@@ -75,8 +75,8 @@ layers:
   - $$mdi:arrow-up-bold$$
   - $$mdi:printer-outline$$
   - Ins
-  - KP SLASH
-  - KP ASTERISK
+  - /
+  - '*'
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - '~'
@@ -87,11 +87,11 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:arrow-down-bold$$
   - {t: '=', s: +}
-  - KP 7
-  - KP 8
-  - KP 9
+  - '7'
+  - '8'
+  - '9'
   - {t: '-', s: _}
-  - APP
+  - $$mdi:menu$$
   - CTRL
   - PG UP
   - $$mdi:arrow-left-bold$$
@@ -100,36 +100,36 @@ layers:
   - {t: '[', s: '{'}
   - $$mdi:arrow-left-bold$$
   - {t: ']', s: '}'}
-  - KP 4
-  - KP 5
-  - KP 6
-  - KP PLUS
+  - '4'
+  - '5'
+  - '6'
+  - +
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:chevron-up$$
+  - $$material:shift$$
   - PG DN
-  - {t: '$$mdi:select-all$$', h: VS Code}
-  - Ctl+Alt+$$mdi:arrow-down-bold$$
+  - {t: '$$material:quick_reference_all_24$$', h: VS Code}
+  - {t: '$$mdi:cursor-text$$', s: '$$mdi:arrow-expand-down$$'}
   - {t: '$$mdi:content-paste$$', s: TEXT}
   - '{'
   - $$mdi:arrow-right-bold$$
   - '}'
-  - KP 1
-  - KP 2
-  - KP 3
+  - '1'
+  - '2'
+  - '3'
   - {t: '=', s: +}
-  - $$mdi:chevron-up$$
+  - $$material:shift$$
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - KP 0
-  - '&M_zero'
-  - KP DOT
+  - '0'
+  - '00'
+  - .
   2_NAV:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
@@ -142,7 +142,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:calculator$$
   - $$mdi:printer-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - PG UP
@@ -177,8 +177,8 @@ layers:
   - {t: '$$mdi:format-color-highlight$$', s: '$$mdi:arrow-right-thin$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:mouse$$', s: '$$mdi:menu-right$$'}
-  - '&M_VShtml'
-  - '&M_VSlang'
+  - $$material:HTML$$
+  - {t: '$$material:Code$$', h: VS Code, s: '$$material:Language$$'}
   - {t: '$$mdi:language-html5$$', h: VS Code, s: FORMAT}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -212,11 +212,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$material:match-word$$', s: '$$mdi:arrow-right-thin$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-down-bold$$
-  - OUT USB
+  - {t: '$$mdi:usb$$', s: OUT}
   - RGB ON
   - RGB EFF
   - RGB BRI
@@ -224,12 +224,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$material:match-word$$', s: '$$mdi:arrow-left-thin$$'}
+  - {t: '$$material:match-word$$', s: '$$mdi:arrow-down-thin$$'}
+  - {t: '$$material:match-word$$', s: '$$mdi:arrow-right-thin$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left-bold$$
-  - OUT BLE
+  - {t: '$$mdi:bluetooth-connect$$', s: OUT}
   - RGB OFF
   - RGB EFR
   - RGB BRD
@@ -257,9 +257,9 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - {t: '&soft_off', type: held}
-  - $$mdi:progress-download$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   4_ALPH2:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '6', s: ^}
@@ -287,7 +287,7 @@ layers:
   - R
   - T
   - $$mdi:keyboard-tab$$
-  - .
+  - {t: '''', s: '"'}
   - H
   - J
   - K
@@ -299,8 +299,8 @@ layers:
   - D
   - F
   - G
-  - $$mdi:keyboard-caps$$
-  - $$mdi:chevron-up$$
+  - $$material:shift_lock$$
+  - $$material:shift$$
   - N
   - M
   - {t: ',', s: <}
@@ -312,7 +312,7 @@ layers:
   - C
   - V
   - B
-  - $$mdi:chevron-up$$
+  - $$material:shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -322,6 +322,6 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-space$$', h: CTRL}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - LGUI
+  - $$mdi:microsoft$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
