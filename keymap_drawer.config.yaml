@@ -319,8 +319,8 @@ parse_config:
 
     "&M_VShtml": $$material:html$$
     "&M_VSlang":
-      tap: $$material:Code$$
-      shifted: $$material:Language$$
+      tap: $$material:code$$
+      shifted: $$material:language$$
       hold: "VS Code"
     "&M_zero": "00"
 
@@ -606,7 +606,7 @@ parse_config:
     LC(LA(DEL)): "CTL ALT DEL"
     LC(F5): $$mdi:web-refresh$$
     LC(F2):
-      tap: $$material:quick_reference_all_24$$
+      tap: $$material:quick_reference_all$$
       hold: "VS Code"
     LA(LS(F)):
       tap: $$mdi:language-html5$$
