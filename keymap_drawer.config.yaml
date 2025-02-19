@@ -304,7 +304,7 @@ parse_config:
       tap: $$mdi:bluetooth-connect$$
 
   #-----------------------------------------------  
-	  
+    
     # SYSTEM
 
     "&sys_reset":
