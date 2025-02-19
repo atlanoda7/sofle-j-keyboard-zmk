@@ -177,7 +177,7 @@ layers:
   - {t: '$$mdi:format-color-highlight$$', s: '$$mdi:arrow-right-thin$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:mouse$$', s: '$$mdi:menu-right$$'}
-  - $$material:HTML$$
+  - $$material:html$$
   - {t: '$$material:Code$$', h: VS Code, s: '$$material:Language$$'}
   - {t: '$$mdi:language-html5$$', h: VS Code, s: FORMAT}
   - {t: '$$mdi:transfer$$', type: trans}
