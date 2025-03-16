@@ -57,7 +57,7 @@ layers:
   - {t: HOME, h: 4_ALPH2}
   - {t: '$$mdi:toggle-switch$$', s: '1'}
   - $$mdi:microsoft$$
-  - {t: '$$mdi:keyboard-return$$', h: 1_NUM}
+  - {t: ENT, h: 1_NUM}
   - {t: '$$mdi:keyboard-space$$', h: CTRL}
   - ENT
   - {t: '$$mdi:keyboard-space$$', h: CTRL}
