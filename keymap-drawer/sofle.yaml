@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: sofle/rev1}
+layout: {zmk_keyboard: sofle}
 layers:
   0_ALPHA:
   - {t: ESC, s: '~'}
@@ -7,7 +7,7 @@ layers:
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - {t: '$$mdi:mouse$$', s: '$$mdi:menu-up$$'}
+  - $$mdi:arrow-up-bold$$
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -20,7 +20,7 @@ layers:
   - E
   - R
   - T
-  - {t: '$$mdi:mouse$$', s: '$$mdi:menu-down$$'}
+  - $$mdi:arrow-down-bold$$
   - Y
   - U
   - I
@@ -33,7 +33,7 @@ layers:
   - D
   - F
   - G
-  - {t: '$$mdi:mouse$$', s: '$$mdi:menu-left$$'}
+  - $$mdi:arrow-left-bold$$
   - H
   - J
   - K
@@ -46,20 +46,20 @@ layers:
   - C
   - V
   - B
-  - {t: '$$mdi:mouse$$', s: '$$mdi:menu-right$$'}
+  - $$mdi:arrow-right-bold$$
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$material:shift$$
-  - $$mdi:mouse-left-click$$
+  - $$mdi:volume-off$$
   - {t: HOME, h: 4_ALPH2}
   - {t: '$$mdi:toggle-switch$$', s: '1'}
   - $$mdi:microsoft$$
   - {t: '$$mdi:keyboard-return$$', h: 1_NUM}
   - {t: '$$mdi:keyboard-space$$', h: CTRL}
-  - $$mdi:mouse-right-click$$
+  - ENT
   - {t: '$$mdi:keyboard-space$$', h: CTRL}
   - {t: '$$mdi:backspace-reverse-outline$$', h: 2_NAV}
   - ALT
@@ -72,7 +72,7 @@ layers:
   - $$mdi:keyboard-tab-reverse$$
   - F4
   - $$mdi:web-refresh$$
-  - $$mdi:arrow-up-bold$$
+  - {t: '$$mdi:mouse$$', s: '$$mdi:menu-up$$'}
   - $$mdi:printer-outline$$
   - Ins
   - /
@@ -85,7 +85,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:arrow-down-bold$$
+  - {t: '$$mdi:mouse$$', s: '$$mdi:menu-down$$'}
   - {t: '=', s: +}
   - '7'
   - '8'
@@ -98,7 +98,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '[', s: '{'}
-  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:mouse$$', s: '$$mdi:menu-left$$'}
   - {t: ']', s: '}'}
   - '4'
   - '5'
@@ -111,20 +111,20 @@ layers:
   - {t: '$$mdi:cursor-text$$', s: '$$mdi:arrow-expand-down$$'}
   - {t: '$$mdi:content-paste$$', s: TEXT}
   - '{'
-  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:mouse$$', s: '$$mdi:menu-right$$'}
   - '}'
   - '1'
   - '2'
   - '3'
   - {t: '=', s: +}
   - $$material:shift$$
-  - $$mdi:volume-off$$
+  - $$mdi:mouse-right-click$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:mouse-left-click$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '0'
