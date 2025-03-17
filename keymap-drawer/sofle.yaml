@@ -53,13 +53,13 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$material:shift$$
-  - $$mdi:mouse-left-click$$
+  - $$mdi:volume-off$$
   - {t: HOME, h: 4_ALPH2}
   - {t: '$$mdi:toggle-switch$$', s: '1'}
   - $$mdi:microsoft$$
   - {t: '$$mdi:keyboard-return$$', h: 1_NUM}
   - {t: '$$mdi:keyboard-space$$', h: CTRL}
-  - $$mdi:mouse-right-click$$
+  - ENT
   - {t: '$$mdi:keyboard-space$$', h: CTRL}
   - {t: '$$mdi:backspace-reverse-outline$$', h: 2_NAV}
   - ALT
