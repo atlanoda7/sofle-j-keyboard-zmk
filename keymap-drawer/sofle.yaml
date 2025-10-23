@@ -59,7 +59,7 @@ layers:
   - $$mdi:microsoft$$
   - {t: '$$mdi:keyboard-return$$', h: 1_NUM}
   - {t: '$$mdi:keyboard-space$$', h: CTRL}
-  - ENT
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-space$$', h: CTRL}
   - {t: '$$mdi:backspace-reverse-outline$$', h: 2_NAV}
   - ALT
