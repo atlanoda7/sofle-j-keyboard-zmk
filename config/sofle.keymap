@@ -106,7 +106,7 @@
 &kp  TAB         &kp  Q           &kp  W           &kp  E           &kp  R           &kp  T           &kp  DOWN      &kp  Y           &kp  U           &kp  I           &kp  O           &kp  P           &kp  BSLH
 &kp  CAPS        &kp  A           &kp  S           &kp  D           &kp  F           &kp  G           &kp  LEFT      &kp  H           &kp  J           &kp  K           &kp  L           &kp  SEMI        &kp  APOS
 &kp  LSHFT       &kp  Z           &kp  X           &kp  C           &kp  V           &kp  B           &kp  RIGHT     &kp  N           &kp  M           &kp  COMMA       &kp  DOT         &kp  FSLH        &kp  RSHFT
-&kp C_MUTE        &lt  4 HOME      &tog 1           &kp  LGUI        &lt 1 ENTER      &rpi LCTRL SPACE &kp ENT        &rpi RCTRL SPACE &lt  2 DELETE    &kp  RALT        &lt  3 K_APP     &lt  4 END
+&kp  C_MUTE      &lt  4 HOME      &tog 1           &kp  LGUI        &lt 1 ENTER      &rpi LCTRL SPACE &kp ENT        &rpi RCTRL SPACE &lt  2 DELETE    &kp  RALT        &lt  3 K_APP     &lt  4 END
             >;
             sensor-bindings = <&scroll_encoder>;
             display-name = "0_ALPHA";
